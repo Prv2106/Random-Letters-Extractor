@@ -31,15 +31,8 @@ function extractor(){
 
 function getRandomIntInRange(max) {
     return Math.floor(Math.random() * max);
-  }
-  
-  
-  
-  
-function onClick(){
-   console.log('Suca gs');
-   extractor();
 }
+  
 
 
 function Restart(){
@@ -57,7 +50,7 @@ function Restart(){
 
 
 let button = document.querySelector('#Extractor');
-button.addEventListener('click',onClick);
+button.addEventListener('click',extractor);
 let e_label = document.querySelector("#Extracted_label");
 let b_label = document.querySelector("#button_label");
 let remaining = document.querySelector("#remaining");
