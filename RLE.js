@@ -21,7 +21,6 @@ function extractor() {
     show_extracted.classList.remove('hidden');
 
     if (alphabet.length === 0) {
-        // b_label.classList.add('hidden');
         b_label.textContent = "Premi Restart per ricominciare";
         button.classList.add('hidden');
         show_remaining.classList.add('hidden');
@@ -34,7 +33,6 @@ function getRandomIntInRange(max) {
 
 function Restart() {
     if (alphabet.length === 0) {
-        // b_label.classList.remove('hidden');
         b_label.textContent = "Estrai una lettera";
         button.classList.remove('hidden');
         show_remaining.classList.remove('hidden');
