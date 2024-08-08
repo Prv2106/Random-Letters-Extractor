@@ -1,5 +1,83 @@
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-family: 'Pangolin', cursive;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#letterBox {
+    margin: 20px;
+    padding: 20px;
+    border: 2px dashed #333;
+    display: inline-block;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
+    max-height: 150px; 
+}
+
+#letterBox.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.letter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff5722;
+    animation: blink 1s infinite;
+}
 
 .hidden {
     display: none;
+}
+
+.info {
+    min-height: 40px; 
+}
+
+#remainingLetters, #extractedLetters {
+    font-family: 'Pangolin', cursive;
+    color: #555;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
