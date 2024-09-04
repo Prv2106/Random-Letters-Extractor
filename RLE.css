@@ -11,6 +11,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    touch-action: manipulation;
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
 }
 
 .container {
